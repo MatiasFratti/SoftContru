@@ -9,7 +9,7 @@ export class Nav extends React.Component <any,any>{
             <div className="navbar-fixed">
                 <nav className="nav-extended">
                     <div className="nav-wrapper">
-                    <a href="#" className="brand-logo">Logo</a>
+                    <a href="#" className="brand-logo">ContruCal </a>
                     <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><a href="sass.html">Proyecto</a></li>

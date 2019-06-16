@@ -8,25 +8,21 @@ export class Login extends React.Component <any,any>{
             <div className="container">
                 <div id="user-login" className="row">
                     <div className="col s12 z-depth-12 card-panel">
+                        <h2>Iniciar sesión</h2>
                         <form className="login-form">
                             <div className="row margin">
                                 <div className="input-field col s12">
-                                    <i className="mdi-social-person-outline prefix"></i>
-                                    <input className="validate" id="user_email" type="email"/>
-                                    <label htmlFor="email" data-error="wrong" data-success="right" className="center-align">Email</label>
+                                    
+                                    <input className="validate" id="user_name" type="text"/>
+                                    
+                                    <label htmlFor="email" data-error="wrong" data-success="right" className="center-align"><i className="material-icons">person</i>Nombre</label>
                                 </div>
                             </div>
                             <div className="row margin">
                                 <div className="input-field col s12">
-                                    <i className="mdi-action-lock-outline prefix"></i>
+                                    
                                     <input id="user_pass" type="password"/>
-                                    <label htmlFor="password">Password</label>
-                                </div>
-                            </div>
-                            <div className="row">          
-                                <div className="input-field col s12 m12 l12  login-text">
-                                    <input type="checkbox" id="remember-me" />
-                                    <label htmlFor="remember-me">Remember me</label>
+                                    <label htmlFor="password"><i className="material-icons">lock</i>Contraseña</label>
                                 </div>
                             </div>
                             <div className="row">
