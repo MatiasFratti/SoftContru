@@ -1,6 +1,9 @@
 import React from 'react';
 
-export class Nav extends React.Component{
+
+import '../syles/nav.sass';
+
+export class Nav extends React.Component <any,any>{
     render(){
         return(
             <div className="navbar-fixed">
@@ -9,17 +12,18 @@ export class Nav extends React.Component{
                     <a href="#" className="brand-logo">Logo</a>
                     <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
-                        <li><a href="sass.html">Sass</a></li>
+                        <li><a href="sass.html">Proyecto</a></li>
                         <li><a href="badges.html">Components</a></li>
-                        <li><a href="collapsible.html">JavaScript</a></li>
+                        <li><a href="collapsible.html">Cerrar sesion</a></li>
                     </ul>
                     </div>
                     <div className="nav-content">
                     <ul className="tabs tabs-transparent">
                         <li className="tab"><a href="#test1">Hormigon</a></li>
-                        <li className="tab"><a className="active" href="#test2">Morteros</a></li>
-                        <li className="tab"><a href="#test3">Disabled Tab</a></li>
-                        <li className="tab"><a href="#test4">Test 4</a></li>
+                        <li className="tab"><a href="#test2">Morteros</a></li>
+                        <li className="tab"><a href="#test3">Armadura</a></li>
+                        <li className="tab"><a href="#test4">Pisos</a></li>
+                        <li className="tab"><a href="#test5">Revoques</a></li>
                     </ul>
                     </div>
                 </nav>
