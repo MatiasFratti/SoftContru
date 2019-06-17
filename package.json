@@ -4,7 +4,8 @@
   "description": "software para cálculo de materiales de la construcción",
   "main": "index.js",
   "scripts": {
-    "start":"webpack-dev-server"
+    "start": "webpack-dev-server",
+    "dev": "node src/index.js"
   },
   "keywords": [
     "Software",
@@ -16,7 +17,9 @@
   "author": "Mateo Fratti, Matias Fratti, Marcos Bellucci",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "mongoose": "^5.6.0",
     "nodemon": "^1.19.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"

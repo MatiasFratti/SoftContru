@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import '../syles/nav.sass';
+import '../styles/nav.sass';
 
 export class Nav extends React.Component <any,any>{
     render(){
