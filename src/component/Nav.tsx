@@ -1,19 +1,22 @@
 import React from 'react';
 
+import { BrowserRouter as Router, Link } from 'react-router-dom';
+
 
 import '../styles/nav.sass';
 
 export class Nav extends React.Component <any,any>{
     render(){
         return(
-            <div className="navbar-fixed">
+            <Router>
+                <div className="navbar-fixed">
                 <nav className="nav-extended">
                     <div className="nav-wrapper">
                     <a href="#" className="brand-logo">ContruCal </a>
                     <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                     <ul id="nav-mobile" className="right hide-on-med-and-down">
                         <li><a href="sass.html">Proyecto</a></li>
-                        <li><a href="badges.html">Components</a></li>
+                        <li><Link to="/Login">Logearse</Link></li>
                         <li><a href="collapsible.html">Cerrar sesion</a></li>
                     </ul>
                     </div>
@@ -39,6 +42,8 @@ export class Nav extends React.Component <any,any>{
                 <div id="test3" className="col s12">Test 3</div>
                 <div id="test4" className="col s12">Test 4</div>
             </div>
+            </Router>  
+            
         );
     }
 }

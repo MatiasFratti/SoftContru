@@ -38,5 +38,8 @@ module.exports = {
         }),
         new MiniCssExtractPlugin("styles.css")
     ],
-    devtool:"source-map"
+    devtool:"source-map",
+    devServer: {
+        historyApiFallback: true,
+    }
 };
