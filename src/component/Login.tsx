@@ -2,9 +2,9 @@ import React from 'react';
 
 import '../styles/login.sass';
 import { string, any } from 'prop-types';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, RouteComponentProps, withRouter } from 'react-router-dom';
 
-export class Login extends React.Component <any,any>{
+class Login extends React.Component <RouteComponentProps<any>,any>{
 
     constructor(prop:any){
         super(prop);
@@ -48,7 +48,7 @@ export class Login extends React.Component <any,any>{
     }
     render(){
         return(  
-            <Router>
+           
                 <div className="container">
                     <div id="user-login" className="row">
                         <div className="col s12 z-depth-12 card-panel">
@@ -75,12 +75,13 @@ export class Login extends React.Component <any,any>{
                         </div>
                     </div>
                 </div>     
-            </Router>    
-            
+              
+               
             
         );
     }
 }
+export default withRouter(Login);
 // interface IUser {
 //     name:string,
 //     pass:string

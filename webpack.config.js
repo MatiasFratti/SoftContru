@@ -17,9 +17,19 @@ module.exports = {
                 loader: "awesome-typescript-loader"
             },
             {
-                enforce: "pre",
+                // enforce: "pre",
                 test:/\.js?$/,
-                loader:"source-map-loader"
+                // loader:"source-map-loader",
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                      presets: ['@babel/preset-react']
+                    }
+                },
+                // options: {
+                //     configFile: 'tsconfig.server.json'
+                // }
             },
             {
                 test:/\.sass$/,

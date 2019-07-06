@@ -1,14 +1,16 @@
 import React from 'react';
 
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link,RouteComponentProps, withRouter } from 'react-router-dom';
 
 
 import '../styles/nav.sass';
+import  Login  from './Login';
 
-export class Nav extends React.Component <any,any>{
+ class Nav extends React.Component <RouteComponentProps<any>,{}>{
+    
     render(){
         return(
-            <Router>
+           
                 <div className="navbar-fixed">
                 <nav className="nav-extended">
                     <div className="nav-wrapper">
@@ -42,8 +44,9 @@ export class Nav extends React.Component <any,any>{
                 <div id="test3" className="col s12">Test 3</div>
                 <div id="test4" className="col s12">Test 4</div>
             </div>
-            </Router>  
-            
+             
+              
         );
     }
 }
+export default withRouter(Nav);
